@@ -1,22 +1,21 @@
 package main;
 
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
+import static java.lang.Integer.parseInt;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        Client_UDP clientUdp;
+        byte[] bytes = {};
+        int studID;
+        studID = parseInt(args[0]);
 
-        int port;
-        InetAddress address;
-        DatagramSocket socket = null;
-        DatagramPacket packet;
-        byte[] sendBuf = new byte[256];
+        //byte[0] = args[0];
 
-        for (String str : args) {
+        /*for (String str : args) {
             System.out.println("The value of first argument is: " + str);
         }
+         */
     }
 }
